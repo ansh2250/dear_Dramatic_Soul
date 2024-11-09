@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:https://deardramaticsoul.com/gallery.html
+
+https://www.eduhawk.in/sitemap.xml

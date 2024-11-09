@@ -1,0 +1,599 @@
+  /* Font imports */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+  /* Global Styles */
+  * {
+      font-family: sans-serif;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body{
+      overflow-x:hidden;
+  }
+
+  /* master css start */
+
+  /* Root Variables */
+  :root {
+      --primary-color: #97590A;
+      --secondry-color: #000;
+      --white: #fff;
+      --black: #000;
+      --background-dark: #97590A;;
+      --text-light: rgba(255,255,255,0.6);
+      --text-lighter: rgba(255,255,255,0.9);
+      --spacing-s: 8px;
+      --spacing-m: 16px;
+      --spacing-l: 24px;
+      --spacing-xl: 32px;
+      --spacing-xxl: 64px;
+      --width-container: 1200px;
+
+  }
+
+  html{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  /* Typography */
+
+
+
+  h1{
+      font-family: "Cinzel" !important;
+      font-size:28px;
+      font-weight: 700;
+      color: var(--primary-color);
+  }
+
+  h1 span{
+    font-family: "Cinzel";
+  }
+
+  h3{
+      font-family:"Cinzel";
+      font-size: 33px;
+      font-weight: 600;
+      color:var(--primary-color);
+  }
+  i {
+      color: var(--primary-color);
+  }
+
+  p{
+      font-family: poppins;
+      font-size: 16px;
+      text-align: justify;
+      color:black;
+  }
+  b{
+      color: var(--primary-color);
+      /* font-family: "Alex Brush", cursive; */
+      text-transform: uppercase;
+      background-color: var(--primary-color);
+      font-size: 15px;
+      color: white;
+      padding:5px;
+  }
+  /* master css end*/
+
+
+    /* Navbar Styles */
+    .offcanvas-header {
+      background-color: var(--white);
+      color: var(--white);
+  }
+
+  .navbar-nav .nav-item:hover .dropdown-menu {
+      display: block;
+  }
+  .navbar-brand img{
+    width: 110px;
+  }
+  /* Style for the navbar-toggler */
+  .navbar-toggler {
+      border: none; /* Remove border */
+      background-color: transparent; /* Ensure background is transparent */
+  }
+
+  /* Change the color of the navbar-toggler-icon to primary color */
+  /* Navbar Toggler Styles */
+  .navbar-toggler {
+      border: none; /* Remove default border */
+      background-color: transparent; /* Transparent background for the button */
+  }
+
+  .navbar-toggler i {
+      display: inline-block;
+      width: 50px; /* Adjust the size of the icon */
+      height: 50px; /* Adjust the size of the icon */
+      line-height: 0; /* Remove any extra space */
+  }
+  .text-holder{
+    font-family: "Cinzel";
+    font-size:22px;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  /* Media query to hide the element on screens smaller than 768px (common breakpoint for tablets and phones) */
+  @media screen and (max-width: 768px) {
+      .text-holder {
+          font-size: 20px;
+          padding: 8px;
+      }
+      
+      .navbar-brand img {
+          width: 70px; /* Reduce logo size */
+      }
+      
+      .navbar-toggler {
+          font-size: 20px;
+      }
+  }
+
+  /* Navbar and text-holder adjustments for mobile (480px and below) */
+  @media screen and (max-width: 480px) {
+      .text-holder {
+          font-size: 16px; /* Smaller font size for mobile */
+          padding: 5px;
+          display: none; /* Hide on small screens */
+      }
+      
+      .navbar-brand img {
+          width: 60px; /* Further reduce logo size */
+      }
+      
+      .navbar-nav .nav-item {
+          margin: 0;
+      }
+      
+      .navbar-nav .nav-link {
+          font-size: 14px; /* Smaller text for mobile nav links */
+      }
+      
+      /* Adjust offcanvas for mobile */
+      .offcanvas-header img {
+          width: 60px;
+      }
+      
+      .offcanvas-body {
+          padding: 10px;
+      }
+  }
+
+  /* =====================================================*/
+  .carousel-item {
+    height: 80vh;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  .highlight-text {
+    background-color:var(--primary-color);
+    padding: 5px;
+    border-radius: 3px;
+    color: #ffffff;
+  }
+  
+  /* =============================================== */
+
+
+   /* First Section */
+.first-section {
+  text-align: center;
+}
+
+.first-section h3 {
+  font-size: 33px;
+  /* color: var(--primary-color); */
+}
+
+.first-section p {
+  color: var(--black);
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+  padding: 0 1rem;
+}
+
+/* Second Section */
+.second-section h3 {
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.second-section p {
+  color: var(--black);
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+}
+
+.second-section .readMoreBtn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.second-section .readMoreBtn:active {
+  background-color: var(--tertiary-color);
+}
+
+/* Third Section */
+/* Ensure the card header has the same height */
+.product_card .card-header {
+  height: 350px; /* Adjust this height as per your design */
+  position: relative;
+  overflow: hidden;
+}
+
+.product_card .card-img-top {
+  object-fit: cover;
+  height: 100%; /* This makes sure the image fills the card header height */
+}
+
+/* Ensure the card body has the same height */
+.product_card .card-body {
+  height: 120px; /* Adjust this height as needed */
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make sure the button area maintains its position */
+.product_card .details-btn .btn {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  transition: bottom 1s ease;
+}
+
+.product_card .card:hover .details-btn .btn {
+  bottom: 0%;
+}
+
+.product_card .card-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 1s ease;
+}
+
+.product_card .card:hover .card-overlay {
+  top: 0%;
+}
+
+.product_card .card .details-btn .btn {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  transition: bottom 1s ease;
+}
+
+.product_card .card:hover .details-btn .btn {
+  bottom: 0%;
+}
+
+.product_card .card .card-body {
+  padding: 10px 0;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+/* Fixed Background */
+.fixed-image {
+  height: 70vh;
+  background-image: url('/assets/images/fixed_background.JPG');
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    /* new section  */
+    .new-section h3{
+      text-align: center;
+    }
+    .new-section p{
+      text-align: center;
+    }
+
+/* Premium Product Section Button */
+.btn-dark {
+  background-color: #000; /* Dark black background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #333; /* Slightly lighter black on hover */
+  color: #fff; /* Ensure white text on hover */
+}
+
+.Handcrafted_Bag{
+  background-color: white;
+}
+
+.Handcrafted_Bag .col-md-6 img{
+  border-radius: 20px;
+  object-fit: cover;
+}
+    /* ======================================== */
+    /* CSS for Footer and Enquiry Form */
+ /*==================== 
+    Footer 
+====================== */
+
+/* Main Footer */
+footer .main-footer {
+  padding: 20px 0;
+  background:var(--primary-color);
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Copy Right Footer */
+.footer-copyright {
+  background:var(--black);
+  padding: 5px 0;
+}
+
+.footer-copyright p {
+  color: #969696;
+  margin: 2px 0 0;
+}
+
+/* Footer Top */
+.footer-top {
+  background: #252525;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #222;
+}
+
+/* Widgets */
+.widget {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.widget.no-box {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.widget.no-box .btn{
+  background-color: var(--black);
+  color: white;
+}
+.widget-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* .widget-title span {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #d83c34; 
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+} */
+
+.widget li a {
+  color:var(--secondry-color);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.widget li a:hover {
+  color: #fff;
+}
+
+/* Social Footer */
+ul.social-footer2 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+ul.social-footer2 li {
+  display: inline-block;
+  padding: 0;
+}
+
+ul.social-footer2 li a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #000000; /* Default color for social icons */
+}
+
+ul.social-footer2 li a i{
+  color: rgb(255, 255, 255);
+}
+ul.social-footer2 li a:hover {
+  background-color: #000000; /* Color on hover */
+}
+
+/* Button */
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn:hover, .btn:focus, .btn.active {
+  background:var(--primary-color);
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 250ms ease-in-out;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #252525;
+  color: #fff;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-body form .form-control {
+  border-radius: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.modal-body form .btn-primary {
+  background-color: #d83c34;
+  border: none;
+}
+
+/* ===================================================== */
+/* about us css */
+
+.about-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.about-box h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about-box section {
+  margin-bottom: 40px;
+}
+.about-box h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+.founder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.founder div {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+.founder img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .about-box h1 {
+      font-size: 28px;
+  }
+  .about-box h2 {
+      font-size: 24px;
+  }
+  .about-box p {
+      font-size: 16px;
+  }
+  .founder div {
+      flex: 1 1 100%;
+  }
+}
+
+/* ================================================ */
+/* collection page css */
+
+.hero-container {
+  background-image: url('/assets/images/collection_image/collection_hdr.jpg');
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items:end;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.hero-container p{
+  color: white;
+}
+

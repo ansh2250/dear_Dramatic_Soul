@@ -1,0 +1,613 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dear Dramatic Soul</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- navbar part start -->
+    <div class="container-fluid sticky-top bg-white shadow">
+      <div class="row">
+        <div class="col-md-10 m-auto">
+          <nav class="navbar">
+            <a class="navbar-brand" href="index.html"><img src="assets/logo/DDS logo.png" alt="" width="110px"> 
+            </a>
+
+            <div class="text-holder" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Dear Dramatic Soul
+            </div>
+            <!-- toggle button -->
+            <div class="bar-holder">
+              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <lord-icon src="https://cdn.lordicon.com/zjhryiyb.json" trigger="loop" delay="1000"
+                  colors="primary:#b27912,secondary:#ebe6ef,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#f24c00"
+                  style="width:50px;height:50px">
+                </lord-icon>
+
+              </button>
+              <!-- <i class="fa-brands fa-facebook p-2"></i>
+              <i class="fa-brands fa-square-instagram p-2"></i>
+              <i class="fa-brands fa-pinterest p-2"></i>
+              <i class="fa-brands fa-youtube p-2"></i> -->
+            </div>
+            <!-- toggle button -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <!-- offcanvas header -->
+              <div class="offcanvas-header">
+                <a href="index.html"><img src="assets/logo/DDS logo.png" alt="" width="110px"></a>
+                <button type="button" class="btn-close btn-close-black shadow-none border-0" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <!-- offcanvas header -->
+              <!-- offcanvas body -->
+              <div class="offcanvas-body">
+                <!-- navbar nav -->
+                <ul class="navbar-nav justify-content-end flex-grow-1  gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="collection.html"> Collection</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html"> Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="gallery.html">Gallery</a> -->
+                  </li>
+                </ul>
+                <!-- navbar nav -->
+              </div>
+              <!-- offcanvas body -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- navbar part end -->
+
+    <!-- ==================================== -->
+    <!-- header start -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1500">
+          <img src="assets/images/Slider/sldr_1st.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-center">
+            <h1><span class="highlight-text">Dear Dramatic Soul</span></h1>
+            <p class="text-center"><span class="highlight-text">Where Every Outfit Tells A Story</span></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="assets/images/Slider/sldr_2nd.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-center">
+            <!-- <h1><span class="highlight-text">Express Yourself</span></h1>
+            <p class="text-center"><span class="highlight-text">Your Style, Your Story</span></p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/Slider/sldr_3rd.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-center">
+            <!-- <h1><span class="highlight-text">Story Begins</span></h1>
+            <p class="text-center"><span class="highlight-text">Every Piece Reflects Emotion</span></p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- ================================================ -->
+    <!-- section first -->
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 mt-5 p-5">
+        <h3> JOURNEY TO DISCOVER TRUE SELF : A JOURNEY OF LOVE</h3> <br>
+          <p class="text-dark">Life is a stage, and you are here to play your destined role. Every experience, person, and challenge is part of your script, guiding you to learn, grow, and uncover your inherent divinity—the eternal presence of love, joy, and oneness. Don’t give up; change is constant, and letting go of your struggles is the key to finding inner peace. Just as light follows darkness, peace follows turmoil. Cherish life, embrace who you are, heal, show compassion, and spread love. Release worries about the past and future—the past is gone, the future is uncertain, and the present is the only reality.
+            <br>
+            <i>
+              With love,
+              Your Soulmate</i>
+          </p>
+
+      </div>
+      <div class="col-md-4">
+        <!-- <img src="assets/images/index_banner_1.png" class="img-fluid" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+    <!-- ============================================================= -->
+
+
+  <!-- First Section Start -->
+  <div class="container mt-5">
+    <div class="row first-section gx-3 row-cols-1 row-cols-lg-12">
+      <div class="col-md-12">
+        <h3> LET LOVE AND GRACE DEFINE YOU WITH DEAR DRAMATIC SOUL</h3>
+        <div class="row mt-5">
+          <div class="col-md-6 d-flex align-items-center justify-content-around">
+            <p>
+              <b>DEAR DRAMATIC SOUL</b> is an Indian premium clothing and accessories brand that uses excellent craftsmanship and ethical business practices to express its love for fashion. Our objective is to craft high-quality, one-of-a-kind pieces that ensure you look stunning and feel confident.
+            
+          DDS talks about the journey of a soul to the purest form of love that dwells within its heart. Our mission is to touch souls and bring them to a deeper level of love, creating a community that honours self-love, compassion, healing, and giving back to people and the planet.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/images/collarge-one.png" class="img-fluid" alt="Timeless Fashion" width="333px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- First Section End -->
+
+<!-- ============================================================== -->
+
+  <!-- Second Section Start -->
+  <div class="container mt-3">
+    <div class="row second-section p-3 gx-3 row-cols-1 row-cols-lg-12 align-items-center">
+      <div class="col-md-12">
+        <h3 class="text-center">Let Timeless Fashion Define You with Dear Dramatic Soul</h3>
+        <p class="text">At Dear Dramatic Soul, we believe that true style never goes out of fashion. Our collections feature timeless designs that blend classic elegance with contemporary flair. 
+          <span class="dots">...</span><span class="more" style="display: none;"> We try our best to produce timeless, uniquely crafted high-quality artisanal pieces to help promote employment to the locals and artisans in the community.To reduce the issue of overproduction, we only make a certain number of pieces for each design and provide a made-to-order option. The luxury of owning an artisanal piece must be both exquisite and responsible.</span>
+        </p>
+        <div class="text-center">
+          <button class="readMoreBtn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Second Section End -->
+
+<!-- ============================================================== -->
+
+  <!-- Third Section Start -->
+<!-- Updated Product Cards Section -->
+<div class="container py-5">
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-lg-3">
+      <div class="product_card">
+        <div class="card border-0">
+          <div class="card-header bg-transparent border-0 p-0">
+            <img class="card-img-top" src="assets/images/Saree 5- KYARI/3rd-K.jpg" alt="KYARI Saree">
+            <div class="card-overlay">
+              <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="details-btn">
+              <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <small>
+              <a href="#" class="text-muted">Saree</a>
+            </small>
+            <strong>
+              <a href="#" class="text-body">KYARI - ₹25,800.00</a>
+            </strong>
+            <p>"HEAL AND GROW INTO A ROYAL BLOOM."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-lg-3">
+      <div class="product_card">
+        <div class="card border-0">
+          <div class="card-header bg-transparent border-0 p-0">
+            <img class="card-img-top" src="assets/images/Saree 4- ROSY LUSH/2nd-RL.JPEG" alt="ROSY LUSH Saree">
+            <div class="card-overlay">
+              <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="details-btn">
+              <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <small>
+              <a href="#" class="text-muted">Saree</a>
+            </small>
+            <strong>
+              <a href="#" class="text-body">ROSY LUSH - ₹33,500.00</a>
+            </strong>
+            <p>SHHHH! ITS A SECRET, "YOU ARE INCREDIBLE."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-lg-3">
+      <div class="product_card">
+        <div class="card border-0">
+          <div class="card-header bg-transparent border-0 p-0">
+            <img class="card-img-top" src="assets/images/Saree 3- KHOOBSURAT GULAB/1st-KG.jpg" alt="KHOOBSURAT GULAB Saree">
+            <div class="card-overlay">
+              <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="details-btn">
+              <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <small>
+              <a href="#" class="text-muted">Saree</a>
+            </small>
+            <strong>
+              <a href="#" class="text-body">KHOOBSURAT GULAB - ₹21,500.00</a>
+            </strong>
+            <p>"RADIATE THE ELEGANCE OF A CHARISMATIC ROSE.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-lg-3">
+      <div class="product_card">
+        <div class="card border-0">
+          <div class="card-header bg-transparent border-0 p-0">
+            <img class="card-img-top" src="assets/images/Saree 2- BLOOMING BEAUTY/5th-BB.jpg" alt="BLOOMING BEAUTY Saree">
+            <div class="card-overlay">
+              <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="details-btn">
+              <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <small>
+              <a href="#" class="text-muted">Saree</a>
+            </small>
+            <strong>
+              <a href="#" class="text-body">BLOOMING BEAUTY - ₹25,800.00</a>
+            </strong>
+            <p>"UNLEASH THE BEAUTY OF YOUR INNER DIVA."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Third Section End -->
+
+<!-- ============================================================== -->
+
+  <!-- Fixed Background Start -->
+  <div class="container-fluid">
+    <div class="row fixed-image">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Background End -->
+
+<!-- ============================================================== -->
+  <!-- Section 1: Featured Products - Grid Layout Start -->
+  <div class="container my-5">
+    <div class="row new-section gx-3 row-cols-1 row-cols-md-3">
+      <div class="col-md-12 mb-4">
+        <h3>Our Featured Bag Collection</h3>
+        <p>Explore the elegance and beauty of our exclusive Bag collection, curated for every occasion.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container py-5">
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-lg-4">
+        <div class="product_card">
+          <div class="card border-0">
+            <div class="card-header bg-transparent border-0 p-0">
+              <img src="assets/images/Bag 1- SHAYARI IN BAGH/4th-SB.JPG" class="product-img img-fluid" alt="Bag 1">
+              <div class="card-overlay">
+                <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="details-btn">
+                <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <small>
+                <a href="#" class="text-muted">Bags</a>
+              </small>
+              <strong>
+                <a href="#" class="text-body">SHAYARI IN BAGH - ₹13,900.00</a>
+              </strong>
+              <p>"BE THE ROMANTIC SHAYAR OF YOUR LIFE TO EXPRESS LOVE."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="col-lg-4">
+        <div class="product_card">
+          <div class="card border-0">
+            <div class="card-header bg-transparent border-0 p-0">
+              <img src="assets/images/Bag 2- RANG BIRANGA/2nd-RB.jpg" class="product-img img-fluid" alt="Bag 2">
+              <div class="card-overlay">
+                <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="details-btn">
+                <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <small>
+                <a href="#" class="text-muted">Bag</a>
+              </small>
+              <strong>
+                <a href="#" class="text-body">RANG BIRANGA - ₹13,900.00</a>
+              </strong>
+              <p>"MAKE YOUR LIFE AS RANG BIRANGA AS NATURE."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 3 -->
+      <div class="col-lg-4">
+        <div class="product_card">
+          <div class="card border-0">
+            <div class="card-header bg-transparent border-0 p-0">
+              <img src="assets/images/Bag 3- SADABAHAR/3rd-S.jpg" class="product-img img-fluid" alt="Saree 3">
+              <div class="card-overlay">
+                <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="details-btn">
+                <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <small>
+                <a href="#" class="text-muted">Bag</a>
+              </small>
+              <strong>
+                <a href="#" class="text-body">SADABAHAR - ₹12,750.00</a>
+              </strong>
+              <p>"APPRECIATE THE BLESSINGS OF EVERGREEN LOVE THAT FILL YOUR HEART.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Product 4 -->
+      <!-- <div class="col-lg-3">
+        <div class="product_card">
+          <div class="card border-0">
+            <div class="card-header bg-transparent border-0 p-0">
+              <img class="card-img-top" src="assets/images/Saree 2- BLOOMING BEAUTY/5th-BB.jpg" alt="BLOOMING BEAUTY Saree">
+              <div class="card-overlay">
+                <button type="button" class="btn btn-secondary"><i class="far fa-heart"></i></button>
+              </div>
+              <div class="details-btn">
+                <a href="collection.html" class="btn btn-dark">View Details <i class="fas fa-long-arrow-alt-right"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <small>
+                <a href="#" class="text-muted">Saree</a>
+              </small>
+              <strong>
+                <a href="#" class="text-body">BLOOMING BEAUTY - ₹25,800.00</a>
+              </strong>
+              <p>"UNLEASH THE BEAUTY OF YOUR INNER DIVA."</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  
+
+
+
+
+
+ 
+
+  <!-- Section 2: Premium Product Showcase - Vertical Layout Start -->
+  <div class="container bg-light">
+      <div class="row align-items-center Handcrafted_Bag">
+        <div class="col-md-6">
+          <img src="assets/images/Gallery/hndcrft_bag.jpg" class="img-fluid" alt="Premium Bag">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-dark">Premium Handcrafted Bag</h3>
+          <p class="text-muted">With its gorgeous hand-embroidered detailing and exquisite design, our Rang Biranga potli bag is sure to turn heads and elevate your outfit.           </p>
+          <ul class="creatine-benefits">
+            <li><b>TOP QUALITY:</b> Each piece is of high quality, assuring a luxurious feel. </li>
+            <li><b>ELEGANT DESIGN:</b> Features a timeless, one-of-a-kind design that will make you feel and look amazing.</li>
+            <li><b>HANDCRAFTED DETAILS:</b> Meticulously crafted by skilled artisans, showcasing fine craftsmanship.</li>
+            <li><b>MADE-TO-ORDER:</b>Each piece will be exclusively handcrafted for you, making it unique and special.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <!-- Section 2: Premium Product Showcase - Vertical Layout End -->
+
+  <!-- Section 3: Trending Products - Masonry Layout Start -->
+  <div class="container my-5">
+    <div class="row new-section gx-3">
+      <div class="col-md-12 text-center mb-4">
+        <h3>Trending Now</h3>
+        <p>See what's hot right now in our exclusive collection.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="product-card p-3 text-center">
+          <img src="assets/images/Bag 1- SHAYARI IN BAGH/2nd-SB.jpg" class="product-img img-fluid" alt="Trending Product 1" width="255px">
+          <h5 class="product-name">SHAYARI IN BAGH</h5>
+          <a href="collection.html"><button class="btn btn-primary">View Details</button></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="product-card p-3 text-center">
+          <img src="assets/images/Saree 5- KYARI/5th-K.jpg" class="product-img img-fluid" alt="Trending Product 2" width="255px">
+          <h5 class="product-name"> KYARI SAREE</h5>
+          <a href="collection.html"><button class="btn btn-primary">View Details</button></a>
+
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="product-card p-3 text-center">
+          <img src="assets/images/Saree 4- ROSY LUSH/1st-RL.JPG" class="product-img img-fluid" alt="Trending Product 3" width="255px">
+          <h5 class="product-name">ROSY LUSH</h5>
+          <a href="collection.html"><button class="btn btn-primary">View Details</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 3: Trending Products - Masonry Layout End -->
+
+<!-- ============================================================== -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="assets/images/Bag 1- SHAYARI IN BAGH/" class="img-fluid" alt="">
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4"><h3>this is heading</h3></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+<!-- ============================================================== -->
+
+
+
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-dark">
+    <div class="container">
+    <div class="row">
+      
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget subscribe no-box">
+    <img src="assets/logo/DDS logo white.png" class="img-fluid" alt="">
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget no-box">
+    <h5 class="widget-title">Quick Links<span></span></h5>
+    <ul class="thumbnail-widget">
+    <li>
+    <div class="thumb-content"><a href="index.html">Home</a></div>	
+    </li>
+    <li>
+    <div class="thumb-content"><a href="collection.html">Collection</a></div>	
+    </li>
+    <li>
+    <div class="thumb-content"><a href="contact.html">Contact Us</a></div>	
+    </li>
+    <li>
+    
+    </li>
+    <li>
+    <!-- <div class="thumb-content"><a href="gallery.htlml">Gallery</a></div>	 -->
+    </li>
+    <li>
+    </ul>
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget no-box">
+    <h5 class="widget-title">Get Started<span></span></h5>
+    <a class="btn" href="https://wa.me/919153266040" target="_blank">Get In Touch</a>
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    
+    <div class="widget no-box">
+    <h5 class="widget-title">Contact Us<span></span></h5>
+    
+  <ul class="social-footer2">
+    <!-- <li><a title="YouTube" target="_blank" href="https://bit.ly/3m9avif"><i class="fab fa-youtube"></i></a></li> -->
+    <li><a href="https://www.facebook.com/share/wLSKxeQGqKKxKHAu/?mibextid=qi2Omg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+    <!-- <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+    <li><a title="WhatsApp" target="_blank" href="https://wa.me/919153266040"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a title="Instagram" target="_blank" href="https://www.instagram.com/deardramaticsoul/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  </div>
+
+    </div>
+    
+    </div>
+    </div>
+    </div>
+      
+    <div class="footer-copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <p>Copyright © 2022. All rights reserved. Created By:- <a href="https://gosparrow.in/" class="Copyright" style="text-decoration:none; color: white;">Go Sparrow</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+  <!-- Footer End --> 
+
+
+<!-- ========================================= -->
+  <!-- ============================================================== -->
+
+
+
+    <!-- AOS Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000 // Animation duration in ms
+      });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </body>
+  </html>

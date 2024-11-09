@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dear Dramatic Soul</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+<style>
+  /* Card Style Enhancements */
+  .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+      padding: 1.5rem;
+  }
+  
+  /* Image Overlay Effect */
+  .image-container {
+      position: relative;
+  }
+  
+  .card-img-top {
+      transition: transform 0.3s ease;
+      width: 100%;
+  }
+  
+  .card:hover .card-img-top {
+      transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .overlay-content {
+      text-align: center;
+  }
+  
+  .overlay-content .price-overlay {
+      font-size: 1.5em;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .overlay-content .btn {
+      background-color: white;
+      color: #333;
+  }
+  
+  .card:hover .overlay {
+      opacity: 1; /* Show overlay on hover */
+  }
+  
+  /* Typography Enhancements */
+  .price {
+      font-size: 1.3em;
+      color: #333;
+      font-weight: bold;
+  }
+  
+  .description {
+      font-size: 1em;
+      color: #666;
+  }
+  
+  .quote {
+      font-style: italic;
+      font-size: 1.1em;
+      color: #D2691E;
+      margin-top: 10px;
+  }
+  
+  .details {
+      font-size: 0.9em;
+      color: #888;
+  }
+  </style>
+</head>
+
+<body>
+    <!-- navbar part start -->
+    <div class="container-fluid sticky-top bg-white shadow">
+      <div class="row">
+        <div class="col-md-10 m-auto">
+          <nav class="navbar">
+            <a class="navbar-brand" href="index.html"><img src="assets/logo/DDS logo.png" alt="" width="110px"> 
+            </a>
+
+            <div class="text-holder" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Dear Dramatic Soul
+            </div>
+            <!-- toggle button -->
+            <div class="bar-holder">
+              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <lord-icon src="https://cdn.lordicon.com/zjhryiyb.json" trigger="loop" delay="1000"
+                  colors="primary:#b27912,secondary:#ebe6ef,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#f24c00"
+                  style="width:50px;height:50px">
+                </lord-icon>
+
+              </button>
+              <!-- <i class="fa-brands fa-facebook p-2"></i>
+              <i class="fa-brands fa-square-instagram p-2"></i>
+              <i class="fa-brands fa-pinterest p-2"></i>
+              <i class="fa-brands fa-youtube p-2"></i> -->
+            </div>
+            <!-- toggle button -->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <!-- offcanvas header -->
+              <div class="offcanvas-header">
+                <a href="index.html"><img src="assets/logo/DDS logo.png" alt="" width="110px"></a>
+                <button type="button" class="btn-close btn-close-black shadow-none border-0" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <!-- offcanvas header -->
+              <!-- offcanvas body -->
+              <div class="offcanvas-body">
+                <!-- navbar nav -->
+                <ul class="navbar-nav justify-content-end flex-grow-1  gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="collection.html"> Collection</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html"> Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link" href="gallery.html">Gallery</a> -->
+                  </li>
+                </ul>
+                <!-- navbar nav -->
+              </div>
+              <!-- offcanvas body -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- navbar part end -->
+
+  <!-- =========================================================== -->
+
+ <div class="container-fluid p-0 hero-container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">Welcome to Our Fashion Store</h3>
+      <p class="text-center">
+        Explore the Finest Collection of Handcrafted Sarees and Bags
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- =========================================================== -->
+
+  <!-- saree -->
+  <div class="container py-5">
+    <div class="row">
+        <!-- Kyari -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="image-container">
+                    <img src="assets/images/Saree 5- KYARI/1st-K.jpg" class="card-img-top" alt="Kyari Saree">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <p class="price-overlay">₹25,800.00</p>
+                            <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Kyari%20saree%20for%20₹25,800.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kyari</h5>
+                    <p class="description">Our Kyari georgette saree in the shade of purple is inspired by Phoolon ki Kyari...</p>
+                    <p class="quote">"HEAL AND GROW INTO A ROYAL BLOOM."</p>
+                    <p class="details">Collection: SHAYARI IN BAGH | Availability: Made To Order</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phoolon Ki Mehfil -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="image-container">
+                    <img src="assets/images/Saree 1- PHOOLON KI MEHFIL/1st-PM.jpg" class="card-img-top" alt="Phoolon Ki Mehfil Saree">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <p class="price-overlay">₹23,500.00</p>
+                            <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Phoolon%20Ki%20Mehfil%20saree%20for%20₹23,500.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Phoolon Ki Mehfil</h5>
+                    <p class="description">Phoolon ki Mehfil saree features a heavenly cluster of hand-embroidered appliqué flowers...</p>
+                    <p class="quote">"NATURALLY FLAUNT YOUR DIVINE FEMININE."</p>
+                    <p class="details">Collection: SHAYARI IN BAGH | Availability: Made to Order</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blooming Beauty -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="image-container">
+                    <img src="assets/images/Saree 2- BLOOMING BEAUTY/1st-BB.jpg" class="card-img-top" alt="Blooming Beauty Saree">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <p class="price-overlay">₹25,800.00</p>
+                            <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Blooming%20Beauty%20saree%20for%20₹25,800.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Blooming Beauty</h5>
+                    <p class="description">Delve into the captivating realm of nature with our Blooming Beauty saree...</p>
+                    <p class="quote">"UNLEASH THE BEAUTY OF YOUR INNER DIVA."</p>
+                    <p class="details">Collection: SHAYARI IN BAGH | Availability: Made To Order</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khoobsurat Gulab -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="image-container">
+                    <img src="assets/images/Saree 3- KHOOBSURAT GULAB/1st-KG.jpg" class="card-img-top" alt="Khoobsurat Gulab Saree">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <p class="price-overlay">₹21,500.00</p>
+                            <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Khoobsurat%20Gulab%20saree%20for%20₹21,500.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Khoobsurat Gulab</h5>
+                    <p class="description">Khoobsurat Gulab saree captures the elegance of a lovely rose...</p>
+                    <p class="quote">"RADIATE THE ELEGANCE OF A CHARISMATIC ROSE."</p>
+                    <p class="details">Collection: SHAYARI IN BAGH | Availability: Made To Order</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rosy Lush -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="image-container">
+                    <img src="assets/images/Saree 4- ROSY LUSH/1st-RL.JPG" class="card-img-top" alt="Rosy Lush Saree">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <p class="price-overlay">₹33,500.00</p>
+                            <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Rosy%20Lush%20saree%20for%20₹33,500.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rosy Lush</h5>
+                    <p class="description">This lovely Pure georgette Rosy Lush saree is the symbol of love...</p>
+                    <p class="quote">"YOU ARE INCREDIBLE."</p>
+                    <p class="details">Collection: SHAYARI IN BAGH | Availability: Made To Order</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!--Bags  -->
+
+<div class="container py-5">
+  <div class="row">
+      <!-- Shayari in Bagh Potli Bag -->
+      <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+              <div class="image-container">
+                  <img src="assets/images/Bag 1- SHAYARI IN BAGH/1st-SB.jpg" class="card-img-top" alt="Shayari in Bagh Potli Bag">
+                  <div class="overlay">
+                      <div class="overlay-content">
+                          <p class="price-overlay">₹13,900.00</p>
+                          <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Shayari%20in%20Bagh%20Potli%20Bag%20for%20₹13,900.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body text-center">
+                  <h5 class="card-title">Shayari in Bagh Potli Bag</h5>
+                  <p class="description">Features our brand icon, The Blooming Rabbit, amidst a beautiful scenery of a blossoming garden...</p>
+                  <p class="quote">"BE THE ROMANTIC SHAYAR OF YOUR LIFE TO EXPRESS LOVE."</p>
+                  <p class="details">Collection: Shayari in Bagh | Style Number: F24B-1 | Fabric: Pure Organza, Viscose blend Uppada Silk | Availability: Made to Order | Care: Dry Clean</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Rang Biranga Potli Bag -->
+      <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+              <div class="image-container">
+                  <img src="assets/images/Bag 2- RANG BIRANGA/1st-RB.jpg" class="card-img-top" alt="Rang Biranga Potli Bag">
+                  <div class="overlay">
+                      <div class="overlay-content">
+                          <p class="price-overlay">₹13,900.00</p>
+                          <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Rang%20Biranga%20Potli%20Bag%20for%20₹13,900.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body text-center">
+                  <h5 class="card-title">Rang Biranga Potli Bag</h5>
+                  <p class="description">Illustrates how beautifully colored nature is with vibrant butterflies and aromatic flowers...</p>
+                  <p class="quote">"MAKE YOUR LIFE AS RANG BIRANGA AS NATURE."</p>
+                  <p class="details">Collection: Shayari in Bagh | Style Number: F24B-2 | Fabric: Viscose blend Uppada Silk | Availability: Made to Order | Care: Dry Clean</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Sadabahar Bag -->
+      <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+              <div class="image-container">
+                  <img src="assets/images/Bag 3- SADABAHAR/1st-S.jpg" class="card-img-top" alt="Sadabahar Bag">
+                  <div class="overlay">
+                      <div class="overlay-content">
+                          <p class="price-overlay">₹12,750.00</p>
+                          <a href="https://wa.me/919153266040?text=I%20am%20interested%20in%20ordering%20the%20Sadabahar%20Bag%20for%20₹12,750.00" class="btn btn-light btn-sm" target="_blank">Order Now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body text-center">
+                  <h5 class="card-title">Sadabahar Bag</h5>
+                  <p class="description">Celebrates the eternal love and strength that reside at the very core of our hearts...</p>
+                  <p class="quote">"APPRECIATE THE BLESSINGS OF EVERGREEN LOVE THAT FILL YOUR HEART.”</p>
+                  <p class="details">Collection: Shayari in Bagh | Style Number: F24B-3 | Fabric: Viscose Uppada Silk | Availability: Made to Order | Care: Dry Clean</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- ============================================================== -->
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-dark">
+    <div class="container">
+    <div class="row">
+      
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget subscribe no-box">
+    <img src="assets/logo/DDS logo white.png" class="img-fluid" alt="">
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget no-box">
+    <h5 class="widget-title">Quick Links<span></span></h5>
+    <ul class="thumbnail-widget">
+    <li>
+    <div class="thumb-content"><a href="index.html">Home</a></div>	
+    </li>
+    <li>
+    <div class="thumb-content"><a href="collection.html">Collection</a></div>	
+    </li>
+    <li>
+    <div class="thumb-content"><a href="contact.html">Contact Us</a></div>	
+    </li>
+    <li>
+    
+    </li>
+    <li>
+    <!-- <div class="thumb-content"><a href="gallery.htlml">Gallery</a></div>	 -->
+    </li>
+    <li>
+    </ul>
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="widget no-box">
+    <h5 class="widget-title">Get Started<span></span></h5>
+    <a class="btn" href="https://wa.me/919153266040" target="_blank">Get In Touch</a>
+    </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    
+    <div class="widget no-box">
+    <h5 class="widget-title">Contact Us<span></span></h5>
+    
+  <ul class="social-footer2">
+    <!-- <li><a title="YouTube" target="_blank" href="https://bit.ly/3m9avif"><i class="fab fa-youtube"></i></a></li> -->
+    <li><a href="https://www.facebook.com/share/wLSKxeQGqKKxKHAu/?mibextid=qi2Omg" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+    <!-- <li><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li> -->
+    <li><a title="WhatsApp" target="_blank" href="https://wa.me/919153266040"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a title="Instagram" target="_blank" href="https://www.instagram.com/deardramaticsoul/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  </div>
+
+    </div>
+    
+    </div>
+    </div>
+    </div>
+      
+    <div class="footer-copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <p>Copyright © 2022. All rights reserved. Created By:- <a href="https://gosparrow.in/" class="Copyright" style="text-decoration:none; color: white;">Go Sparrow</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+  <!-- Footer End --> 
+<!-- ============================================================== -->
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    duration: 1000 // Animation duration in ms
+  });
+</script>
+<script src="script.js"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>
